@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.d-set{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.h-100vh{
+    height: 100vh;
+}
+.rootsection{
+    background-color: #d4cdcd;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ptb-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h1{
+   font-size: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.login{
+    box-shadow: 0 3px 3px 2px #c49d9d;
+    background: rgb(202, 192, 192);
+    display: flex;
+    border-radius: 10px;
+}
+.leftArea, .rightArea{
+    width: 50%;
+}
+.rightArea{
+    padding: 30px;
+}
+.formInput{
+    margin-bottom: 30px;
+}
+.remember{
+    margin-bottom: 20px;
+}
+.formInput label{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.formInput input{
+    width: 100%;
+    border: 1px solid #dbcece;
+    border-radius: 6px;
+    height: 36px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    /* box-sizing:content-box ; */
+}
+
+.loginBtn{
+    background-color: #5209da;
+    border: unset;
+    border-radius: 8px;
+    color: #fff;
+    width: 100%;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: large;
+}
+.loginBtn:hover{
+    box-shadow: 0 2px 2px 0 #ccc;
+    background-color: #5d12e7;
+    cursor: pointer;
+}
+
+
+/* 
+img section
+*/
+
+.gallery{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.gallery .gallery_inner{
+    width: 25%;
+    height: 260px;
+    box-shadow: 0 0 4px 0 #d47272;
+}
+.gallery .gallery_inner img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+     /* object-fit:fill; */
+      object-fit:cover;
+       /* object-fit:none; */
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .login{
+        display: flex;
+        flex-direction: column;
+         width: 100%;
+    }
+
+    .leftArea, .rightArea{
+        width: 100%;
+    }
+    .wrapper{
+        max-width: 900px;
+        margin: auto;
+    }
+    /* .rightArea{
+        padding-left: 10px;
+    } */
+  }
